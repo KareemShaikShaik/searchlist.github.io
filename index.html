@@ -64,13 +64,14 @@ text-align: center;
     .container{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    width:450px;
+    width:500px;
+        height: 300px;
         text-align: center;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 20px;
-        padding-top: 20px;
-        margin-top: 19%;
+        padding-top: 50px;
+        margin-top: 15%;
 }
 
 .container:hover {
@@ -85,7 +86,8 @@ text-align: center;
     
 
 @media only screen and (max-width: 530px){
-   .container{
+ 
+    .container{
     
         width: 340px;
 }
@@ -100,7 +102,7 @@ text-align: center;
 <h2>Search</h2>
 <!--Make sure the form has the autocomplete function switched off:-->
 <form autocomplete="off" action="list/list.html">
-  <div class="autocomplete" >
+  <div class="autocomplete" style="width: 290px;">
     <input id="myInput" type="text" placeholder="Enter Product Name/Model.NO">
 	
   </div>
