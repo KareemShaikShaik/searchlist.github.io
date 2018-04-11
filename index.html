@@ -11,12 +11,13 @@ body {
 }
 .autocomplete {
   /*the container must be positioned relative:*/
+  
   position: relative;
-top:220px;
   display: inline-block;
 }
 input {
-  border: 1px solid transparent;
+  border: 1px solid grey;
+    border-radius: 5px;
   background-color: #f1f1f1;
   padding: 10px;
   font-size: 16px;
@@ -29,8 +30,6 @@ input[type=submit] {
   background-color: DodgerBlue;
   color: #fff;
   cursor: pointer;
-  position:relative;
-  top:220px;
 }
 .autocomplete-items {
   position: absolute;
@@ -59,35 +58,57 @@ input[type=submit] {
   color: #ffffff; 
 }
 h2{
-position:relative;
-top:220px;
+text-align: center;
+    
 }
+    .container{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 30%;
+        height:200px;
+        position: relative;
+        top: 200px;
+        left: 450px;
+        text-align: center;
+        padding-bottom: 20px;
+        padding-top: 20px;
+}
+
+.container:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+    }
 </style>
 </head>     
 
 <body>
-<center>
+<div class="container">
 <h2>Search</h2>
-
-
-
-
-
 <!--Make sure the form has the autocomplete function switched off:-->
 <form autocomplete="off" action="list/list.html">
-  <div class="autocomplete" style="width:300px;">
+  <div class="autocomplete" >
     <input id="myInput" type="text" placeholder="Enter Product Name/Model.NO">
 	
   </div>
   <input id="submitButton" type="submit" onclick="submitFunction()"> 
  
-</form>
-</center>
-
+    </form>
+</div>
 
 
 <script>
+/*function submitFunction(){
 
+if (document.getElementById("myInput").validity.valid) {
+        window.open("");
+		
+    }
+	else if(document.getElementById("myInput").validity.valueMissing){
+	    document.getElementById("demo").innerHTML = "Enter Product Name/Model.NO";
+	}
+
+}*/
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
