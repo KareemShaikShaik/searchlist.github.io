@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 * {
   box-sizing: border-box;
@@ -13,7 +14,8 @@ body {
   /*the container must be positioned relative:*/
   
   position: relative;
-  display: inline-block;
+  display:inline;
+  
 }
 input {
   border: 1px solid grey;
@@ -24,7 +26,7 @@ input {
 }
 input[type=text] {
   background-color: #f1f1f1;
-  width: 100%;
+  width: 75%;
 }
 input[type=submit] {
   background-color: DodgerBlue;
@@ -60,6 +62,14 @@ input[type=submit] {
 h2{
 text-align: center;
     
+}
+i{
+color:DodgerBlue;
+cursor:pointer;
+position:fixed;
+left:63%;
+top:50%;
+
 }
     .container{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -106,24 +116,24 @@ text-align: center;
     <input id="myInput" type="text" placeholder="Enter Product Name/Model.NO">
 	
   </div>
-  <input id="submitButton" type="submit" onclick="submitFunction()"> 
- 
+ <!-- <input id="submitButton" type="submit" onclick="submitFunction()"> -->
+ <i class="fa fa-search" style="font-size:25px;" id="submitButton" onclick="submitFunction()"></i>
     </form>
 </div>
 
 
 <script>
-/*function submitFunction(){
+function submitFunction(){
 
 if (document.getElementById("myInput").validity.valid) {
-        window.open("");
+        window.open("list/list.html","_self");
 		
     }
 	else if(document.getElementById("myInput").validity.valueMissing){
 	    document.getElementById("demo").innerHTML = "Enter Product Name/Model.NO";
 	}
 
-}*/
+}
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
