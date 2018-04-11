@@ -74,7 +74,7 @@ top:220px;
 
 
 <!--Make sure the form has the autocomplete function switched off:-->
-<form autocomplete="off" action="">
+<form autocomplete="off" action="list/list.html">
   <div class="autocomplete" style="width:300px;">
     <input id="myInput" type="text" placeholder="Enter Product Name/Model.NO">
 	
@@ -87,17 +87,7 @@ top:220px;
 
 
 <script>
-function submitFunction(){
 
-if (document.getElementById("myInput").validity.valid) {
-        window.open("list/list.html");
-		
-    }
-	else if(document.getElementById("myInput").validity.valueMissing){
-	    document.getElementById("demo").innerHTML = "Enter Product Name/Model.NO";
-	}
-
-}
 function autocomplete(inp, arr) {
   /*the autocomplete function takes two arguments,
   the text field element and an array of possible autocompleted values:*/
