@@ -32,6 +32,10 @@
     -webkit-flex-basis: 100px; /* Safari 6.1+ */
     flex-basis: 100px;
 }
+p{
+    padding: 10px;
+         text-align: left;
+}
 .center{
      text-align: center;
     
@@ -52,6 +56,10 @@
         width: 100%;
          margin-top: 150px;
 }
+     p{
+         padding: 10px;
+         text-align: left;
+     }
 }
 @media only screen and (max-width: 530px){
  
@@ -73,6 +81,10 @@
     align-content: space-between;
     
 }
+    p{
+    padding: 10px;
+         text-align: left;
+    }
     
     }
     
